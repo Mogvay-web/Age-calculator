@@ -1,0 +1,100 @@
+.age-calculator {
+  box-sizing: border-box;
+  width: 840px;
+  background-color: var(--white);
+  padding: 5rem;
+  border-radius: 3rem 3rem 16rem;
+}
+
+.age-calculator__block--inputs {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.age-calculator__block--send {
+  display: flex;
+}
+
+.age-calculator__line {
+  height: 2px;
+  background-color: var(--grey-2);
+  border: unset;
+  flex-grow: 1;
+  margin: auto;
+}
+
+.age-calculator__line_hidden {
+  display: none;
+}
+
+.age-calculator__button {
+  display: block;
+  cursor: pointer;
+  background-color: var(--pirple);
+  border: none;
+  border-radius: 5rem;
+  padding: 2rem;
+}
+
+.age-calculator__button-image {
+  width: 4.6rem;
+  height: 4.4rem;
+}
+
+.age-calculator__age-wrapper {
+  font-size: 10rem;
+  line-height: 10.6rem;
+  font-family: 'Poppins-ExtraBoldItalic';
+}
+
+.age-calculator__age-value,
+.age-calculator__age-unit {
+  display: inline-block;
+  line-height: inherit;
+}
+
+.age-calculator__age-value {
+  color: var(--pirple);
+  margin-right: 1.5rem;
+}
+
+@media (width < 870px) {
+  .age-calculator {
+    width: 740px;
+  }
+}
+
+@media (width < 770px) {
+  .age-calculator {
+    width: 640px;
+  }
+}
+
+@media (width < 670px) {
+  .age-calculator {
+    width: 540px;
+  }
+}
+
+@media (width < 570px) {
+  .age-calculator {
+    width: 345px;
+  }
+
+  .age-calculator__block--inputs {
+    margin-bottom: 4rem;
+  }
+
+  .age-calculator__block--send {
+    margin-bottom: 2rem;
+  }
+
+  .age-calculator__line_hidden {
+    display: unset;
+  }
+
+  .age-calculator__button-image {
+    width: 3.6rem;
+    height: 3.4rem;
+  }
+}
